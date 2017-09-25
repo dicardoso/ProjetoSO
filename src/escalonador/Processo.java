@@ -59,5 +59,6 @@ public class Processo implements Comparable<Processo> {
     public String toString() {
         return "P" + getId() + "(" + getTempoChegada() + " " + getDuracao() + ")";
     }
+    
 }
 
