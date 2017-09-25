@@ -6,6 +6,7 @@ public class Processo implements Comparable<Processo> {
     private int tempoChegada;
     private int duracao;
     private int duracaoRestante;
+    
     public Processo(int id, int tempoChegada, int duracao) {
         this.id = id;
         this.tempoChegada = tempoChegada;
@@ -13,6 +14,7 @@ public class Processo implements Comparable<Processo> {
         this.duracaoRestante = duracao;
     }
     
+    //Métodos GET/SET
     public int getId() {
         return id;
     }
@@ -39,7 +41,6 @@ public class Processo implements Comparable<Processo> {
     }
     
     //Ordena a lista de acordo com a duracao e tempo de chegada
-
     public int compareTo(Processo p) {
 
         if ((this.tempoChegada < p.getTempoChegada() || this.tempoChegada == p.getTempoChegada())
