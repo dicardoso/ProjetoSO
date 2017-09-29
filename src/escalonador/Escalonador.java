@@ -33,7 +33,6 @@ public class Escalonador {
     }
    
     //Retorna o tempo de chegada mínimo dentre todos os processos
-
     public int tempoChegadaMinimo(List<Processo> processos) {
     	int min = Integer.MAX_VALUE;
     	for (Processo p : processos) {
