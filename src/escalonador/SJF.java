@@ -44,7 +44,7 @@ public class SJF extends Escalonador {
         List<Processo> p = new ArrayList<Processo>(processos);
         int sumRetorno = 0, menor = 0, pivo = 0;
 	
-        // Ordena a lista para garantir a hierarquia de chegada
+        // Ordena a lista para garantir a ordem de chegada
         Collections.sort(p);
 
         listaProntos.add(p.remove(0));

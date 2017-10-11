@@ -13,6 +13,7 @@ public class Main {
     public static List<Processo> listaProcessos = new ArrayList<Processo>();
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
+        //Arquivo
         File file = new File("arquivo.txt");
         int id = 0;
 
@@ -26,7 +27,7 @@ public class Main {
             while ((linha = in.readLine()) != null) {
                 split = linha.split(" ");
 
-                if (split.length != 2) {
+                if (split.length != 2) { //Testa se a formatação dos dados
                     System.out.println("Erro de formatação no arquivo!!!");
                 } 
                 else {
