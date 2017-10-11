@@ -38,7 +38,10 @@ public class Main {
             System.out.println("Houve um problema no arquivo");
         }
 
-        FCFS fcfs = new FCFS(listaProcessos);        
+        FCFS fcfs = new FCFS(listaProcessos);  
+        SJF sjf = new SJF(listaProcessos);
+        
         fcfs.printMetricas("FCFS");
+        sjf.printMetricas("SJF");
     }
 }
