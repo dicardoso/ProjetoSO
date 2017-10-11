@@ -13,7 +13,7 @@ public class Main {
     public static List<Processo> listaProcessos = new ArrayList<Processo>();
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        //Arquivo
+        //Arquivo contendo dados dos processos
         File file = new File("arquivo.txt");
         int id = 0;
 
